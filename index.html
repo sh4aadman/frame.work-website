@@ -47,34 +47,31 @@
     <main>
         <section>
             <article class="container p-5">
-                <div id="carouselExampleDark" class="carousel carousel-dark slide carousel-fade"
-                    data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-                            aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="1000">
-                            <img src="images/cover/cover-1.png" class="img-fluid bg-gradient" alt="carousel">
-                            <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
-                                <h1 class="fw-bold fs-1 text-light">Get Started Digital Learning</h1>
-                                <p class="fw-normal fs-3 text-light">Cheaper price, effective learning, brighter future
-                                </p>
-                                <a class="btn fw-normal fs-3 text-light" href="http://">Get Started</a>
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner rounded">
+                        <div class="carousel-item active">
+                            <img src="images/cover/cover-1.png" class="d-block w-100 h-75" alt="carousel-banner">
+                            <div class="carousel-caption d-flex flex-column justify-content-center" style="top: 0">
+                                <h1 class="text-light fw-normal fs-1">Get Started Digital Learning</h5>
+                                    <p class="text-light fw-light fs-5">Our expert teachers will serve you with the
+                                        latest web developemnet courses with
+                                        the
+                                        top-notch support you need. Follow simple procedures and get your skillset
+                                        going.
+                                    </p>
+                                    <a class="btn btn-outline-dark" href="http://">Get started</a>
                             </div>
                         </div>
-
+                        <div class="carousel-item">
+                            <img src="images/cover/cover-3.jpg" class="d-block w-100 h-75" alt="carousel-banner">
+                        </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
                         data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
                         data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
@@ -111,13 +108,13 @@
                         <div class="accordion" id="accordionOne">
                             <div class="accordion-item border-0">
                                 <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button text-dark fw-light fs-3" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                    <button class="accordion-button collapsed fw-light fs-3" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
                                         aria-controls="collapseOne">
                                         Difference between FlexBox & Grid?
                                     </button>
                                 </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse border-0"
+                                <div id="collapseOne" class="accordion-collapse collapse hide border-0"
                                     aria-labelledby="headingOne" data-bs-parent="#accordionOne">
                                     <div class="accordion-body fw-light fs-4">
                                         <p>The basic difference between CSS Grid Layout and CSS
@@ -138,7 +135,7 @@
                                     </button>
                                 </h2>
                                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                    data-bs-parent="#accordionExample">
+                                    data-bs-parent="#accordionTwo">
                                     <div class="accordion-body fw-light fs-4">
                                         <p>Websites created using Tailwind CSS are much more customizable. <br><br>
                                             Websites
@@ -157,7 +154,7 @@
                                     </button>
                                 </h2>
                                 <div id="collapseThree" class="accordion-collapse collapse"
-                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionThree">
                                     <div class="accordion-body fw-light fs-4">
                                         <p>The CSS box model is essentially a box that wraps around every HTML element.
                                             It
@@ -174,7 +171,7 @@
                                     </button>
                                 </h2>
                                 <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                                    data-bs-parent="#accordionExample">
+                                    data-bs-parent="#accordionFour">
                                     <div class="accordion-body fw-light fs-4">
                                         <p>A semantic element clearly describes its meaning to both the browser and the
                                             developer. Examples of non-semantic elements: div and span - Tells nothing
